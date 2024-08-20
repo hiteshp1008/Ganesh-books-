@@ -1,0 +1,534 @@
+[
+  {
+    "cssMode": "css",
+    "id": "8UDlkBm3Kb",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "css": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: 'Poppins', sans-serif;\n}\n\np{\n  margin: 0;\n}\n\nul{\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n  display: block;\n  vertical-align: middle;\n}\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n.container {\n  display: flex;\n  max-width: none !important;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 1.25rem;\n}\n\n.sub-container {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n\n.heading {\n  margin: 1.25rem;\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 500;\n  text-align: center;\n}\n\n@media (min-width: 640px) {\n  .heading {\n    font-size: 1.875rem;\n    line-height: 2.25rem;\n  }\n}\n\n.product-container {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 1rem;\n  margin-top: 1.5rem;\n}\n\n@media (min-width: 768px) {\n  .product-container{\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n}\n\n@media (min-width: 1024px) {\n  .product-container{\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n}\n\n.product{\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  overflow: hidden;\n  background-color: #fff;\n  border-radius: 0.375rem;\n  border: 2px solid rgb(17 24 39);\n}\n\n.header{\n  overflow: hidden;\n}\n\n.footer{\n  display: flex;\n  flex-direction: column;\n  flex: 1 1 0%;\n  padding: 1.25rem;\n}\n\n.footer .product-cat{\n  color: rgb(185 28 28);\n  font-size: 0.75rem;\n  line-height: 1rem;\n  font-weight: 700;\n  letter-spacing: 0.025em;\n  text-transform: uppercase;\n  flex: 1 1 0%\n}\n\n.header .product-img{\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 300ms;\n}\n\n.footer .product-name{\n  margin: 0;\n  font-size: 1rem;\n  line-height: 1.5rem;\n  font-weight: 700;\n  margin-top: 0.625rem;\n}\n\n.footer .product-price{\n  color: rgb(75 85 99);\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.product:hover .product-img{\n  transform: scale(1.25);\n}",
+    "updatedOn": 1724144521873,
+    "jsMode": "js",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Ecommerce Product List Template</title>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"sub-container\">\n              <h1 class=\"heading\">Collection of Ebooks</h1>\n          <ul class=\"product-container\">\n              <li class=\"product\">\n                  <div class=\"header\">\n                      <img class=\"product-img\" src=\"https://www.codewithfaraz.com/shop_img/master-collection-of-web-and-python-projects.webp\" alt=\"master-collection-of-web-and-python-projects\" />\n                  </div>\n                  <div class=\"footer\">\n                      <p class=\"product-cat\">\n                          Sale!!\n                      </p>\n                      <h3 class=\"product-name\">\n                          <a href=\"https://buymeacoffee.com/farazc60n/e/277053\" target=\"_blank\">Master Collection of Web & Python Projects</a>\n                      </h3>\n                      <p class=\"product-price\"><s>$10</s> $5</p>\n                  </div>\n              </li>\n              <li class=\"product\">\n                  <div class=\"header\">\n                      <img class=\"product-img\" src=\"https://www.codewithfaraz.com/shop_img/400-html-css-and-javascript-projects.webp\" alt=\"400-html-css-and-javascript-projects\" />\n                  </div>\n                  <div class=\"footer\">\n                      <p class=\"product-cat\">\n                          New\n                      </p>\n                      <h3 class=\"product-name\">\n                          <a href=\"https://buymeacoffee.com/farazc60n/e/277042\" target=\"_blank\">400+ HTML, CSS, and JavaScript Projects</a>\n                      </h3>\n                      <p class=\"product-price\">$5</p>\n                  </div>\n              </li>\n              <li class=\"product\">\n                  <div class=\"header\">\n                      <img class=\"product-img\" src=\"https://www.codewithfaraz.com/shop_img/850-python-projects-source-code-1.webp\" alt=\"850-python-projects-source-code\" />\n                  </div>\n                  <div class=\"footer\">\n                      <p class=\"product-cat\">\n                          New\n                      </p>\n                      <h3 class=\"product-name\">\n                          <a href=\"https://buymeacoffee.com/farazc60n/e/275626\" target=\"_blank\">850+ Python Projects</a>\n                      </h3>\n                      <p class=\"product-price\">$5</p>\n                  </div>\n              </li>\n              <li class=\"product\">\n                  <div class=\"header\">\n                      <img class=\"product-img\" src=\"https://www.codewithfaraz.com/shop_img/4500-python-functions-1.webp\" alt=\"4500-python-functions\" />\n                  </div>\n                  <div class=\"footer\">\n                      <p class=\"product-cat\">\n                          New\n                      </p>\n                      <h3 class=\"product-name\">\n                          <a href=\"https://buymeacoffee.com/farazc60n/e/274931\" target=\"_blank\">4500+ Essential Python Functions</a>\n                      </h3>\n                      <p class=\"product-price\">$3</p>\n                  </div>\n              </li>\n              <li class=\"product\">\n                <div class=\"header\">\n                    <img class=\"product-img\" src=\"https://www.codewithfaraz.com/shop_img/master-collection-of-web-and-python-projects.webp\" alt=\"master-collection-of-web-and-python-projects\" />\n                </div>\n                <div class=\"footer\">\n                    <p class=\"product-cat\">\n                        Sale!!\n                    </p>\n                    <h3 class=\"product-name\">\n                        <a href=\"https://buymeacoffee.com/farazc60n/e/277053\" target=\"_blank\">Master Collection of Web & Python Projects</a>\n                    </h3>\n                    <p class=\"product-price\"><s>$10</s> $5</p>\n                </div>\n            </li>\n            <li class=\"product\">\n                <div class=\"header\">\n                    <img class=\"product-img\" src=\"https://www.codewithfaraz.com/shop_img/400-html-css-and-javascript-projects.webp\" alt=\"400-html-css-and-javascript-projects\" />\n                </div>\n                <div class=\"footer\">\n                    <p class=\"product-cat\">\n                        New\n                    </p>\n                    <h3 class=\"product-name\">\n                        <a href=\"https://buymeacoffee.com/farazc60n/e/277042\" target=\"_blank\">400+ HTML, CSS, and JavaScript Projects</a>\n                    </h3>\n                    <p class=\"product-price\">$5</p>\n                </div>\n            </li>\n            <li class=\"product\">\n                <div class=\"header\">\n                    <img class=\"product-img\" src=\"https://www.codewithfaraz.com/shop_img/850-python-projects-source-code-1.webp\" alt=\"850-python-projects-source-code\" />\n                </div>\n                <div class=\"footer\">\n                    <p class=\"product-cat\">\n                        New\n                    </p>\n                    <h3 class=\"product-name\">\n                        <a href=\"https://buymeacoffee.com/farazc60n/e/275626\" target=\"_blank\">850+ Python Projects</a>\n                    </h3>\n                    <p class=\"product-price\">$5</p>\n                </div>\n            </li>\n            <li class=\"product\">\n                <div class=\"header\">\n                    <img class=\"product-img\" src=\"https://www.codewithfaraz.com/shop_img/4500-python-functions-1.webp\" alt=\"4500-python-functions\" />\n                </div>\n                <div class=\"footer\">\n                    <p class=\"product-cat\">\n                        New\n                    </p>\n                    <h3 class=\"product-name\">\n                        <a href=\"https://buymeacoffee.com/farazc60n/e/274931\" target=\"_blank\">4500+ Essential Python Functions</a>\n                    </h3>\n                    <p class=\"product-price\">$3</p>\n                </div>\n            </li>\n          </ul>\n      </div>\n  </div>\n  </body>\n</html>",
+    "layoutMode": 1,
+    "mainSizes": [
+      15,
+      85
+    ],
+    "js": "",
+    "createdOn": 1724144326074,
+    "content": "",
+    "sizes": [
+      33,
+      33,
+      34
+    ],
+    "htmlMode": "html",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "title": "Untitled 20-8-14:28"
+  },
+  {
+    "js": "",
+    "jsMode": "js",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "createdOn": 1662577660343,
+    "title": "39",
+    "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <style>\n      p {color: orange;}\n      p.ex1 {display:none;}\n      p.ex2 {display:inline;}\n      p.ex3 {display:block;}\n      p.ex4 {display:inline-block;}\n    </style>\n  </head>\n  <body>\n    <h1>The display property</h1>\n    <h2>display: none</h2>\n  <div> Using this property we can disable the \n        content(text/Image) inside a class. <p class=\"ex1\">HELLO WORLD!</p> we have disabled \"HELLO WORLD\" which was having class \"ex1\" using display:none property.\n    </div>\n  <h2>display: inline:</h2>\n  <div>\n  using this property we can desplay the content inline(text/Image) inside a class. <p class=\"ex2\">HELLO WORLD!</p> we have displayed \"HELLLO WORLD\" inline which was having class \"ex1\" using display:inline property \n    <div>\n      <p>Similarly we have displayed content using display: block and display:inline-block in the below HTML code</p>\n      <h2>display; block:</h2>      \n      <div>\n        loren ipsum dolor sit amet, consectetor adipiscing elit. Etian semper diam at errat pulvinar, at pulvinar felis blandit. <p class= \"ex3\">HELLO WORLD!</p> vestiulum volutpat tellus diam, consequat gravida libero rhoncus ut.\n      </div>\n      <h2>display: inline-block:</h2>\n      <div>\n        Lorem ispum color sit amet consectetur adipiscing elit. Etim semper diam at erat pulvinar at pulvinar felis blandit. <p class=\"ex4\">HELLO WORLD!</p> vestibilam volutpat tellus diam consequat gravida libero rhoncus ut.\n      </div>\n      <body>\n      <html>",
+    "htmlMode": "html",
+    "id": "item-546F4aORrf",
+    "content": "",
+    "mainSizes": [
+      50,
+      50
+    ],
+    "updatedOn": 1663700101312,
+    "css": "",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "cssMode": "css",
+    "layoutMode": 1
+  },
+  {
+    "updatedOn": 1660157606144,
+    "mainSizes": [
+      50,
+      50
+    ],
+    "createdOn": 1657617638658,
+    "cssMode": "css",
+    "html": "<!DOCTYPE>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"mystyle.css\">\n  </head>\n  <body>\n  <hl>THIS IS THE HEADING,<hl>\n  <p>This is a paragraph,</p>\n    </body>\n</html>\n\n  \n  ",
+    "htmlMode": "html",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "layoutMode": 1,
+    "title": "css external PG 12",
+    "sizes": [
+      33,
+      33,
+      34
+    ],
+    "js": "",
+    "id": "item-5aIXzBLjiH",
+    "css": "body{ background-color: red;}\nhl { color:yellowgreen;margin-left: 50px; }\n",
+    "content": "",
+    "jsMode": "js"
+  },
+  {
+    "content": "",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "updatedOn": 1660158296150,
+    "js": "",
+    "id": "item-7XovejCRwk",
+    "title": "HTML TABLE WITH STUDENT MARKS PG 27",
+    "jsMode": "js",
+    "createdOn": 1658848028244,
+    "layoutMode": 1,
+    "css": "",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "htmlMode": "html",
+    "mainSizes": [
+      50,
+      50
+    ],
+    "cssMode": "css",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <body>\n      <table>\n        <thead>\n          <tr>\n            <th> STUDENT MARKS SHEET</th>\n          <tr>\n            <th>NAME</th>\n            <th>HISTORY</th>\n            <th>MATHS</th>\n            <th>SCIENCE</th>\n            <th>MARATHI</th>\n            <th>HINDI</th>\n            </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>ATHARVA</td>\n            <td>   86</td>\n            <td>96</td>\n            <td>67</td>\n            <td>87</td>\n            <td>37</td>\n          </tr>\n          <tr>\n            <td>HITESH</td>\n            <td>98</td>\n            <td>89</td>\n            <td>94</td>\n            <td>76</td>\n            <td>59</td>\n          </tr>\n          <tr>\n            <td>DHEER</td>\n            <td>39</td>\n            <td>45</td>\n            <td>56</td>\n             <td>39</td>\n             <td>54</td>\n            </tr>\n          <tr>\n            <td>HIMESH</td>\n            <td>65</td>\n            <td>35</td>\n            <td>54</td>\n             <td>67</td>\n             <td>89</td>\n            </tr>\n          <tr>\n            <td>BHAVESH</td>\n            <td>67</td>\n            <td>55</td>\n            <td>87</td>\n             <td>76</td>\n             <td>56</td>\n            </tr>\n        </tbody>\n        \n      </table>\n    </body>\n  </head>\n</html>"
+  },
+  {
+    "updatedOn": 1717573673150,
+    "htmlMode": "html",
+    "cssMode": "css",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "layoutMode": 1,
+    "mainSizes": [
+      33,
+      67
+    ],
+    "html": "<html>\n    <head>\n   <title>\n     KM FAMILY \n      </title>\n      \n     </head>\n     <body>\n       <h1> THE HAPPY FAMILY OF KM PUROHIT<b>\n       <P> THERE ARE  4 BROTHERS AND 5 SISTERS<b>\n        <p> BIG BROTHER  PARAS K PUROHIT↓<b>\n\n <center>        \n<img\n  src=\"https://media.licdn.com/dms/image/C4E03AQFFyqTXDdQ0fQ/profile-displayphoto-shrink_800_800/0/1516561804712?e=2147483647&v=beta&t=xNiANJWrvaNwjuD6147RWzVFrYppmBssF6p-hmqtMaw\"\n     widths:300\n     height:300\n     </body>\n    </html>\n         <h1> HE HAVE TWO BOYS </h5>\n<h1> BIG CHILD IS PIYUSH PARAS PUROHIT↓\n           <img\n           src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/362702726_6205485912914442_3161384105391751860_n.jpg?stp=dst-webp_e15_q70_s720x1120_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=111&_nc_ohc=tT2TzQ5HIGUAX_gKqzU&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfAew6rrQzYnHFvKljaejrcVa85KHnb5wiCqc8trt4sERA&oe=64C5433D\"\n            <center>\n                <h1> SMALL CHILD IS KUNDAN PARAS PUROHIT↓ <b>   \n          \n          <img\n          src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/362111186_1480886669333849_4966841321555799610_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=108&_nc_ohc=_Ws4S4dewKUAX_PYL0J&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfC-PGnh7H2KBJXd8MmjSDZZWqjFoT8Ma5bR9NG9nO_5dg&oe=64C44C9F\"\n    \n        <center>\n        \n        <p>SECOND CHILD OF KM PUROHIT IS KARSAN K PUROHIT↓\n          <img\n           src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/363058960_6854892271189025_3543275467836521587_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=111&_nc_ohc=7JYQ1dA7s48AX-p1vgK&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfDc4vfpqqmhD9ISRrTRBU_xQ36oLpxm6rRyurixsp-TdQ&oe=64C4AEB7\"\n               \n               <center>\n          \n               <p>HE HAVE 3 CHILDEN <b>\n               <p>2 BOYS AND 1 GIRL<b>\n                 <p>BIG CHILD IS HITESH K PUROHIT↓<b>\n                     <center>\n              <img\n                 src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/348880429_132724123168627_8244641763576343672_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=109&_nc_ohc=fogCN5comPIAX9iVpvx&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfA5GMjWqbHp4f8OSdWX3oCkrjboksHRbsMNknb7rKByTg&oe=64C47C2E\"  \n                   <center>\n                   <p>MEDIUM CHILD IS ANKITA K PUROHIT↓ <b>\n                     <img\n                          src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/363100541_3496802117229711_4704107048529992936_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=109&_nc_ohc=0E8sT5wlYr0AX_VXJCq&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfAQ44aYB9OFrJpmcvO-glIBc3sd_tlxP2UgiFjvj6o8fQ&oe=64C6A800\"\n                          <center>\n                     \n       <p>SMALL CHILD IS HASMUKH K PUROHIT↓<b>\n         <center>\n           \n         <img\n              src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/350087263_721893079697487_3075331187623637858_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=103&_nc_ohc=NYDg5zT-e_sAX_E6Qf9&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfA43R2iBOQvg-vZ0iIiaIyueSkzSSFadWOY08mfo4vSeg&oe=64C7418C\"\n       \n              <p> THIRD BROTHER OF KM PUROHIT IS NIMBARAM PUROHIT↓ <b>            <center>\n           <img\n                src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/363412917_1057535515218064_6622538306696310008_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=102&_nc_ohc=-6H3q1iygs4AX9JXchg&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfCazDtB9awLAuooBTQDanZtaqpVfLmeKXVfsTctzBEvuA&oe=64C6CE98\"\n      \n      <center>\n                <p>HE HAVE TWO GIRLS AND TWO BOYS<b>\n           <center>\n         \n             <p>THE BIGGER CHILD IS SAPNA PUROHIT↓<b>\n           <center>\n        <img\n             src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/362405835_266688179490259_7465592868702155804_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=110&_nc_ohc=lwwjjN0lfD8AX-DzeYY&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfAyLSCzWXsjZheEss2rb3IR6UV6fHD7PgkRDsjf9DIn6Q&oe=64C6538E\"\n            \n      <center>\n            \n             <p>THE SECOND CHILD IS NIKITA PUROHIT↓<b>\n          <center>\n             <img\n                src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/363457902_302299165547871_5907512126212499233_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=105&_nc_ohc=TrSTAExcEcEAX9z54nj&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfCl6Ogr9LahaSTsRhjx1Hw9fMNKa1aVNPWoz1nAPg87Bg&oe=64C7AFED\"\n    <center>\n                    <p>THE THIRD CHILD IS PARESHPUROHIT↓<b>\n                           <center>\n           <img\n                src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/361640712_759847386147320_4202814061247835092_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=101&_nc_ohc=b51JWK_rtn8AX_ZRCf7&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfC_H9TzZboFWnupVfbcVV_R3ErGKHN9bzxqjR-G4r5PNg&oe=64C661F2\"\n    <center>            \n              \n                <p>THE FOUR CHILD IS ABHIJEET PUROHIT↓<b>\n         <center>\n                             <img\n                src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/361592604_1443547196218261_7979565220898218875_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=109&_nc_ohc=GfLtF0x5ygIAX9TY8Cw&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfBCFOCrTX-Lj1hZ04GrJLelgdC69OGV83rIHbEdIzKgeQ&oe=64C7222A\"\n      \n      <center>\n        \n           <p>FOURTH  CHILD OF KM PUROHIT IS PRITESH K PUROHIT↓ <b>\n              \n           \n             <img\n                  src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/363063243_208722302167171_748295830674797346_n.jpg?stp=dst-webp_e15_q70_s720x720_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=101&_nc_ohc=gw_Y5HuFXdwAX_o0rba&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfAIM0khSPBVYMzrAEQ-hlyi4Pd6MVF8jogS_v3XzqcNYg&oe=64C46310\"\n                  \n                  <p> HE HAVE 3 CHILDREN <b>\n            <p>HE HAVE 2 BOYS AND 1 GIRL<b>\n             <p>BIG CHILD IS JAYESH PRITESH PUROHIT↓ <b>\n               <img\n                    src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/362381617_791873829094551_7245526691450951646_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=105&_nc_ohc=rwjy7KQYwwwAX8gGBQI&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfDA6WwAVoG2BO7qTO6EXpIDbv7Dk6F3DJQM5wARFdi0nw&oe=64C4881D\"\n                    \n                    <p>MEDIUM CHILD IS KAVYA PRIESH PUROHIT↓ <b>\n               \n               <img\n                    src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/362695887_184260157983154_7988936983516003241_n.jpg?stp=dst-webp_e15_q70_s720x895_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=107&_nc_ohc=Sr9PNEsBIN0AX-xAurJ&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfBdmoLqKIgqGiIjYHaOv3m3xMkcgP2MAzwdAAJ6uUcr3w&oe=64C43707\"\n                    \n                    <p>SMALL CHILD IS MOHIT PRITESH PUROHIT↓<b>\n           <img\n                src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/362667930_241763172128680_5394630768543372326_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=109&_nc_ohc=I0FtuHHoycgAX8vIplw&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfCz9nYZIkp0S2q_UJPs5o47K5jE9HRlN9ayGpWZGUyVeg&oe=64C6B4E2\"\n      <center>",
+    "css": "",
+    "title": "Untitled 27-7-14:15",
+    "id": "item-H0LOQD0O3H",
+    "createdOn": 1690447524708,
+    "jsMode": "js",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "content": "",
+    "js": "",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ]
+  },
+  {
+    "id": "item-JF9LMLy5cL",
+    "sizes": [
+      33,
+      33,
+      34
+    ],
+    "mainSizes": [
+      50,
+      50
+    ],
+    "css": "body{ background-color:blueviolet ;}\nhl { color: blue;margin-left: 50px; }\n",
+    "title": "MY FAVOURITE PET WITH CSS PG 16",
+    "cssMode": "css",
+    "createdOn": 1658860630745,
+    "js": "",
+    "htmlMode": "html",
+    "content": "",
+    "layoutMode": 1,
+    "jsMode": "js",
+    "html": "<html>\n    <head>\n   <title>\n     MY FAVOURITE PET\n      </title>\n      \n     </head>\n     <body>\n       <h2>MY FAVOURITE PET IS DOG - PITBULL \n         <P> Pit bull is a term used in the United States for a type of dog descended from bulldogs and terriers, while in other countries such as the United Kingdom the term is used as an abbreviation of the American Pit Bull Terrier breed. The term was first used in 1927. Within the United States the pit bull is usually considered a heterogeneous grouping that includes the breeds American Pit Bull Terrier, American Staffordshire Terrier, American Bully, Staffordshire Bull Terrier and occasionally the American Bulldog, along with any crossbred dog that shares certain physical characteristics with these breeds. In other countries including Britain, the Staffordshire Bull Terrier is not considered a pit bull.[1][4][5] Most pit bull-type dogs descend from the British Bull and terrier, a 19th-century dog-fighting type developed from crosses between the Old English Bulldog and the Old English Terrier. <p/>\n\n <center>        \n<img\nsrc='https://i.pinimg.com/736x/49/fc/6a/49fc6af2c4db96f7aae62093fbbea0bc.jpg'\n     widths:300\n     height:300\n     </body>\n    </html>\n         <h5> size- large  size</h5>\n         <h5>weight-30 and 50 pounds</h5>\n         <h5>height- 17 to 20 inches tall</h5>\n           \n    \n     ",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "updatedOn": 1662492182511
+  },
+  {
+    "css": "",
+    "htmlMode": "html",
+    "createdOn": 1664035407453,
+    "layoutMode": 1,
+    "html": "<!DOCTYPE html>\n<html>\n    <head>\n      <title>Portfolio</title>\n  </head>\n  <body>\n    <header>\n      <nav id=\"navbar\">\n        <a herf=\"#\" class=\"nav-link\"> THE </a>\n         <a herf=\"#work\" class=\"nav-link\">FAMILY</a>\n         <a herf=\"#skills\" class=\"nav-link\">OF KM</a>\n         <a herf=\"#contact\" class=\"nav-link\">RAJPUROHIT</a>\n        </nav>\n    </header>\n    <!--header image start-->\n    <div id=\"header\" class=\"section\">\n      <img alt=\"\"class=\"img-circle\" src=\"https:www.brillcool.com/pub/media/testimonial/u/user.png\">\n      <!--Change the scrul and add your image here-->\n      <p>THE FAMILY IS FROM DHANOL,RAJASTHAN</p>\n      <!--write the students name in the above P tag-->\n      </div>\n     <!--header image end-->\n    \n     <!--About me section starts-->\n    <div class=\"section\">\n      <h1 id=#><span>About Me</span></h1>\n      <p>\n        Hey! I'm <b>KARNAJI MONAJI PUROHIT ,</b> I AM FROM DHAANOL RAJASTHAN. I AM A FARMER. I DO AGRICULTURE OF ALMOST ALL CROPS .  \n      </p>\n      <!--fill the above paragraph tag with information about you-->\n      </div>\n    <!--About Me section-->\n    <!--My projects starts-->\n    <div class=\"section\">\n      <h1 id=work><span>My Projects</span></h1>\n      <div class=\"gallery\">\n        \n        <div class=\"gallery-item\">\n          <img class=\"gallery-image\" src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QA9RXhpZgAASUkqAAgAAAABAA4BAgAbAAAAGgAAAAAAAABEb2cgcHVwcHkgcGxheWluZyBvbiBnYXJkZW7/7QBsUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAE8cAlAADWNoYXlhdGhvbndvbmccAngAG0RvZyBwdXBweSBwbGF5aW5nIG9uIGdhcmRlbhwCbgAYR2V0dHkgSW1hZ2VzL2lTdG9ja3Bob3RvAP/hAwFodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvAAk8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgoJCTxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6SXB0YzR4bXBDb3JlPSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wQ29yZS8xLjAveG1sbnMvIiB4bWxuczpHZXR0eUltYWdlc0dJRlQ9Imh0dHA6Ly94bXAuZ2V0dHlpbWFnZXMuY29tL2dpZnQvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwbHVzPSJodHRwOi8vbnMudXNlcGx1cy5vcmcvbGRmL3htcC8xLjAvIiB4bWxuczppcHRjRXh0PSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wRXh0LzIwMDgtMDItMjkvIiBwaG90b3Nob3A6Q3JlZGl0PSJHZXR0eSBJbWFnZXMvaVN0b2NrcGhvdG8iIEdldHR5SW1hZ2VzR0lGVDpBc3NldElEPSIxMTQyNDEyODY2IiA+CjxkYzpjcmVhdG9yPjxyZGY6U2VxPjxyZGY6bGk+Y2hheWF0aG9ud29uZzwvcmRmOmxpPjwvcmRmOlNlcT48L2RjOmNyZWF0b3I+PGRjOmRlc2NyaXB0aW9uPjxyZGY6QWx0PjxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+RG9nIHB1cHB5IHBsYXlpbmcgb24gZ2FyZGVuPC9yZGY6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\" >\n          </div>\n        <div class=\"gallery-item\">\n          <img class=\"gallery-image\" src=\"https://media.istockphoto.com/photos/san-francisco-skyline-at-sunrise-picture-id922779642?k=20&m=922779642&s=612x612&w=0&h=0GTOwxnZC0MmqiANCSmRl-csDkizsbsTXdD6jEsmQb0=\"alt=\"sunset behind San Francisco city skylin\">\n    </div>\n        <div class=\"gallery-item\">\n         <img class=\"gallery-image\" src=\"https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop=\"alt=\"people holding umbrellas on a busy street at night lit by street lights and illuminated sings in Tokyo,Japan\">  \n        </div>\n        <div class=\"gallery-item\">\n         <img class=\"gallery-image\" src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyhR2zh2hO8SUdQ3tbxMFO1A6aeDvM7dRLMcFsqDVPTIx4XNRdW8EBQuQ-qtXlaYDJzCA&usqp=CAU\"alt=\"car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night\">  \n        </div>\n         <div class=\"gallery-item\">\n         <img class=\"gallery-image\"     \n              src=\"https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop\"alt=\"back view of women wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City,USA\">  \n        </div>\n        <div class=\"gallery-item\">\n         <img class=\"gallery-image\"     \n              src=\"https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop\"alt=\"man wearing a black jacket, white shirt, blue jeans, and brown boots, and playing a white eletri guitar while sitting on an amp\">  \n        </div>\n    </div>\n    <!--replace all the source if image tag with your own project images-->\n      </div>\n    <!--My projects section end-->\n    <!--My skills section start-->\n    <div class=\"section\">\n      <h1 id=skills><span>My Skills</span></h1>\n      <ul>\n        <li>Html<br/>\n          <progress min=\"0\" max=\"100\" value=\"80\"></progress>\n          </li>\n        <li>CSS<br/>\n          <progress min=\"0\" max=\"100\" value=\"100\"></progress>\n          </li>\n        <li>C++<br/>\n          <progress min=\"0\" max=\"100\" value=\"60\"></progress>\n          </li>\n        <li>C programming<br/>\n          <progress min=\"0\" max=\"100\" value=\"70\"></progress>\n          </li>\n        </ul>\n      <!--replace the list with your own skill set-->\n      </div>\n     <!--My skills section end-->\n     <!--Form section start-->\n     <!--Submit button will send the details to the mail id given in form action attribute-->\n    <div class=\"section\">\n      <h1 id=contact><span>Contact Me</span></h1>\n      <form action=\"mailto:someone@example.com\" method=\"post\"enctype=\"text/plain\">\n        <input name=\"name\" placeholder=\"Name\" type=\"text\"requried><br/>\n        <input name=\"email\" placeholder=\"Email\" type=\"email\"requried><br/>\n        <textarea name=\"massage\" placeholder=\"Massage\" requried></textarea>\n        <input type=\"sumbit\">\n        </form>\n    </div>\n  </body>\n</html>",
+    "title": "potfolio",
+    "js": "",
+    "id": "item-JU5DCeIrQ0",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "cssMode": "css",
+    "updatedOn": 1687000361733,
+    "content": "",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "mainSizes": [
+      50,
+      50
+    ],
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "jsMode": "js"
+  },
+  {
+    "js": "",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "createdOn": 1658212576484,
+    "updatedOn": 1690445131857,
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "html": " <html>\n    <head>\n   <title>\n     KM FAMILY \n      </title>\n      \n     </head>\n     <body>\n       <h1> THE HAPPY FAMILY OF KM PUROHIT<b>\n       <P> THERE ARE  4 BROTHERS AND 5 SISTERS<b>\n        <p> BIG BROTHER  PARAS K PUROHIT↓<b>\n\n <center>        \n<img\nsrc=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/361887830_668997258011070_9055917487982050125_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=104&_nc_ohc=qR5JsBEY140AX8r3RKM&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfBYKW9tC6tXY25cqvojJs7Nt2djP4C2FlHN1HuZHRD8DQ&oe=64C52656\"\n     widths:300\n     height:300\n     </body>\n    </html>\n         <h1> HE HAVE TWO BOYS </h5>\n<h1> BIG CHILD IS PIYUSH PARAS PUROHIT↓\n           <img\n           src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/362702726_6205485912914442_3161384105391751860_n.jpg?stp=dst-webp_e15_q70_s720x1120_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=111&_nc_ohc=tT2TzQ5HIGUAX_gKqzU&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfAew6rrQzYnHFvKljaejrcVa85KHnb5wiCqc8trt4sERA&oe=64C5433D\"\n            <center>\n                <h1> SMALL CHILD IS KUNDAN PARAS PUROHIT↓ <b>   \n          \n          <img\n          src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/362111186_1480886669333849_4966841321555799610_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=108&_nc_ohc=_Ws4S4dewKUAX_PYL0J&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfC-PGnh7H2KBJXd8MmjSDZZWqjFoT8Ma5bR9NG9nO_5dg&oe=64C44C9F\"\n    \n        <center>\n        \n        <p>SECOND CHILD OF KM PUROHIT IS KARSAN K PUROHIT↓\n          <img\n           src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/363058960_6854892271189025_3543275467836521587_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=111&_nc_ohc=7JYQ1dA7s48AX-p1vgK&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfDc4vfpqqmhD9ISRrTRBU_xQ36oLpxm6rRyurixsp-TdQ&oe=64C4AEB7\"\n               \n               <center>\n          \n               <p>HE HAVE 3 CHILDEN <b>\n               <p>2 BOYS AND 1 GIRL<b>\n                 <p>BIG CHILD IS HITESH K PUROHIT↓<b>\n                     <center>\n              <img\n                 src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/348880429_132724123168627_8244641763576343672_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=109&_nc_ohc=fogCN5comPIAX9iVpvx&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfA5GMjWqbHp4f8OSdWX3oCkrjboksHRbsMNknb7rKByTg&oe=64C47C2E\"  \n                   <center>\n                   <p>MEDIUM CHILD IS ANKITA K PUROHIT↓ <b>\n                     <img\n                          src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/363100541_3496802117229711_4704107048529992936_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=109&_nc_ohc=0E8sT5wlYr0AX_VXJCq&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfAQ44aYB9OFrJpmcvO-glIBc3sd_tlxP2UgiFjvj6o8fQ&oe=64C6A800\"\n                          <center>\n                     \n       <p>SMALL CHILD IS HASMUKH K PUROHIT↓<b>\n         <center>\n           \n         <img\n              src=\"\n           \n      <p> THIRD BROTHER OF KM PUROHIT IS NIMBARAM PUROHIT↓<b>            <center>\n          <img\n                   src=\"\"\n      \n      <center>\n                <p>HE HAVE TWO GIRLS AND TWO BOYS<b>\n                    <p>THE BIGGER CHILD IS SAPNA PUROHIT↓<b>\n           <center>\n        <img\n             src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/362405835_266688179490259_7465592868702155804_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=110&_nc_ohc=lwwjjN0lfD8AX-DzeYY&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfAyLSCzWXsjZheEss2rb3IR6UV6fHD7PgkRDsjf9DIn6Q&oe=64C6538E\"\n            \n      <center>\n            \n             <p>THE SECOND CHILD IS NIKITA PUROHIT↓<b>\n          <center>\n             <img\n                src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/363457902_302299165547871_5907512126212499233_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=105&_nc_ohc=TrSTAExcEcEAX9z54nj&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfCl6Ogr9LahaSTsRhjx1Hw9fMNKa1aVNPWoz1nAPg87Bg&oe=64C7AFED\"\n    <center>\n                    <p>THE THIRD CHILD IS PARESHPUROHIT↓<b>\n                           <center>\n           <img\n                src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/361640712_759847386147320_4202814061247835092_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=101&_nc_ohc=b51JWK_rtn8AX_ZRCf7&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfC_H9TzZboFWnupVfbcVV_R3ErGKHN9bzxqjR-G4r5PNg&oe=64C661F2\"\n    <center>            \n              \n                <p>THE FOUR CHILD IS ABHIJEET PUROHIT↓<b>\n         <center>\n                             <img\n                src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/361592604_1443547196218261_7979565220898218875_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=109&_nc_ohc=GfLtF0x5ygIAX9TY8Cw&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfBCFOCrTX-Lj1hZ04GrJLelgdC69OGV83rIHbEdIzKgeQ&oe=64C7222A\"\n      \n      <center>\n        \n           <p>FOURTH  CHILD OF KM PUROHIT IS PRITESH K PUROHIT↓ <b>\n              \n           \n             <img\n                  src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/363063243_208722302167171_748295830674797346_n.jpg?stp=dst-webp_e15_q70_s720x720_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=101&_nc_ohc=gw_Y5HuFXdwAX_o0rba&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfAIM0khSPBVYMzrAEQ-hlyi4Pd6MVF8jogS_v3XzqcNYg&oe=64C46310\"\n                  \n                  <p> HE HAVE 3 CHILDREN <b>\n           <p>HE HAVE 2 BOYS AND 1 GIRL<b>\n             <p>BIG CHILD IS JAYESH PRITESH PUROHIT↓ <b>\n               <img\n                    src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/362381617_791873829094551_7245526691450951646_n.jpg?stp=dst-webp_e15_q70_s720x960_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=105&_nc_ohc=rwjy7KQYwwwAX8gGBQI&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfDA6WwAVoG2BO7qTO6EXpIDbv7Dk6F3DJQM5wARFdi0nw&oe=64C4881D\"\n                    \n                    <p>MEDIUM CHILD IS KAVYA PRIESH PUROHIT↓ <b>\n               \n               <img\n                    src=\"https://scontent.fbom20-2.fna.fbcdn.net/v/t15.5256-10/362695887_184260157983154_7988936983516003241_n.jpg?stp=dst-webp_e15_q70_s720x895_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-2.fna&_nc_cat=107&_nc_ohc=Sr9PNEsBIN0AX-xAurJ&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfBdmoLqKIgqGiIjYHaOv3m3xMkcgP2MAzwdAAJ6uUcr3w&oe=64C43707\"\n                    \n                    <p>SMALL CHILD IS MOHIT PRITESH PUROHIT↓<b>\n           <img\n                src=\"https://scontent.fbom20-1.fna.fbcdn.net/v/t15.5256-10/355174384_5170659426392490_5234880108214871958_n.jpg?stp=dst-webp_e15_q70_s720x1185_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fbom20-1.fna&_nc_cat=105&_nc_ohc=Lqbl-Kef7Z0AX-NHSyX&ccb=1-7&_nc_sid=ad6a45&cb=99be929b-59f725be&oh=00_AfA--OSTrkm-zYqcwvnF-tuwbT3swvrCWMhVtARTpNzc6A&oe=64C57900\"\n               ",
+    "htmlMode": "html",
+    "css": "",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "title": "my favourite pet PG 9",
+    "layoutMode": 1,
+    "mainSizes": [
+      38,
+      62
+    ],
+    "cssMode": "css",
+    "jsMode": "js",
+    "id": "item-JbOWcEeRL0",
+    "content": ""
+  },
+  {
+    "htmlMode": "html",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "id": "item-MG9OUojgSu",
+    "jsMode": "js",
+    "updatedOn": 1660158216620,
+    "mainSizes": [
+      50,
+      50
+    ],
+    "css": "",
+    "cssMode": "css",
+    "html": "<!DOCTYPE html>\n\n<html>\n\n<body>\n\n<h2>Input Element of type text</h2>\n  <form action=\"/action_page.php\"> <label for=\"fname\">First name:</label><br> <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>\n\n\n</form>\n  <h2>Gender radio input type</h2> <form>\n\n<input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\"> <label for=\"male\">Male</label><br>\n\n<input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\n\n<label for=\"female\">Female</label><br>\n\n<input type=\"radio\" id=\"other\" name=\"gender\" value=\"other\"> <label for=\"other\">Other</label>\n\n</form>\n</body> </html>\n\n<!DOCTYPE html>\n\n<head>\n\n</head>\n\n<body>\n\n<form>\n\n<label for=\"frame\">First name:</label><br>\n\n<input type=\"text\" id=\"fname\" name=\"fname\" value=\"\"><br> <label for=\"name\">Last name:</label><br>\n\n<input type=\"text\" id=\"Iname\" name=\"name\" value=\"\"><br><br>\n\n<input type=\"submit\" value=\"Submit\">\n\n<input type=\"reset\">\n\n</form> </body>\n\n\n",
+    "layoutMode": 1,
+    "js": "",
+    "createdOn": 1659469056121,
+    "title": "test 33",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "content": ""
+  },
+  {
+    "createdOn": 1657693185036,
+    "id": "item-PK0z37DC3F",
+    "cssMode": "css",
+    "sizes": [
+      33,
+      33,
+      34
+    ],
+    "html": "<!DOCTYPE html>\n<html>\n    <body>\n      <h1 style=\"color:blue;text-aling:center;\">THIS IS A HEADING</h1>\n      <p style=\"color:red;\">THIS IS A PARAGRAFH.</p>  \n  </body>\n</html>\n\n    ",
+    "mainSizes": [
+      50,
+      50
+    ],
+    "js": "",
+    "content": "",
+    "updatedOn": 1660157638201,
+    "layoutMode": 1,
+    "title": "css inline PG 14",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "jsMode": "js",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "css": "",
+    "htmlMode": "html"
+  },
+  {
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "js": "",
+    "mainSizes": [
+      45,
+      55
+    ],
+    "createdOn": 1658862098265,
+    "content": "",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "jsMode": "js",
+    "id": "item-POAXBVJE8B",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "title": "html tables PG 24",
+    "layoutMode": 1,
+    "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <body>\n      <table>\n        <thead>\n          <tr>\n            <th>HEADING-1</th>\n            <th>HEADING-2</th>\n            <th>HEADING-3</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>COLUMN-1</td>\n            <td>COLUMN-2</td>\n            <td>COLUMN-3</td>\n          </tr>\n          <tr>\n            <td>ROW-2 COL-1</td>\n            <td>ROW-2 COL-1</td>\n            <td>ROW-2 COL-1</td>\n            </tr>\n        </tbody>\n        \n      </table>\n    </body>\n  </head>\n</html>",
+    "css": "",
+    "cssMode": "css",
+    "updatedOn": 1660158266637,
+    "htmlMode": "html"
+  },
+  {
+    "js": "",
+    "css": "",
+    "createdOn": 1662491657752,
+    "jsMode": "js",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "layoutMode": 1,
+    "content": "",
+    "cssMode": "css",
+    "mainSizes": [
+      50,
+      50
+    ],
+    "updatedOn": 1662491735628,
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "html": "<!doctype html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>HTML Form</title>\n    <link rel=\"stylesheet\"href=\"https://cdn.jadelivr.net/npm/magical-\n                                c33@latest/dist/magic.css\">\n  </head>\n  <body style=\"backgroundcolor:white; \" >\n    <h1 style=\"backgroundcolor:orangered; \"\n        color:orangered;\n        font-weight:bold;\n        text-align:center:\n        letter-spacing:1px\n        transition:\n        background color 0.2s ease 03;>\n        Material design-contact form\n        \n        </h1>\n    \n    <form>\n      <label for=\"id\"style=\"background-color:orangered;\"\n             color:orangered;\n             font-family:gans-gerif;\n             font-weight:normal;\n             text align:center;\n             letter spacing:1px;\n             transition:\n             \n                              \n             ",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "title": "matial",
+    "htmlMode": "html",
+    "id": "item-Yh7BTxOKvB"
+  },
+  {
+    "jsMode": "js",
+    "updatedOn": 1662490792994,
+    "title": "STUDENT NAME AGE WITH CSS 27",
+    "mainSizes": [
+      50,
+      50
+    ],
+    "js": "",
+    "layoutMode": 1,
+    "content": "",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "cssMode": "css",
+    "htmlMode": "html",
+    "css": "",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n  <style> table, th, td {\n    border: 2px solid rgb(225, 10, 10);\n    border-collapse:collapse;\n    }\n    th, td {padding: 20px;\n    }\n    tn{\n      text-align: left;\n    }\n    table{\n      width:100%;\n    }\n    \n    </style>\n  </head>\n    <body>\n      <table>\n        <tr>\n          <th>FIRSTNAME</th>\n          <th>LASTNAME</th>\n          <th>AGE</th>\n        </tr>\n        <tr>\n          <th>eknath</th>\n          <th>shinde</th>\n          <th>15</th>\n          </tr>\n        <tr>\n          <th>PIYUSH</th>\n           <th>PUROHIT</th>\n          <th>18</th>\n          </tr>\n        <tr>\n           <th>ROHIT</th>\n           <th>SHARMA</th>\n           <th>20</th>",
+    "createdOn": 1658948420321,
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "id": "item-fheXctZl2Y",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2"
+  },
+  {
+    "mainSizes": [
+      50,
+      50
+    ],
+    "html": "<!DOCTYPE html>\n\n<head>\n\n<style>\n\n.country {\n\nbackground-color: orange;\n\ncolor: white; padding: 8px;}\n\n  .para{ background-color: black;\n\ncolor:white;\n\npadding:8px;\n\n</style>\n\n</head> <body>\n\n<h2 class=\"country\">INDIA's National anthem</h2>\n\n<p class=\"para\">Jana Gana Mana is the national anthem of India..</p> <h2 class=\"country\">INDIA's Population</h2> <p class=\"para\">India has the second largest\n\npopulation in the world.</p> <h2 class=\"country\">INDIA's National Animal</h2>\n\n<p class=\"para\">National animal of India is Royal magnificent Royal Bengal Tiger</p>\n\n</body> </html>",
+    "layoutMode": 1,
+    "updatedOn": 1660157836775,
+    "css": "",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "id": "item-gP7AeNqoWA",
+    "content": "",
+    "htmlMode": "html",
+    "createdOn": 1658391222237,
+    "js": "",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "title": "class page 22",
+    "jsMode": "js",
+    "cssMode": "css",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    }
+  },
+  {
+    "sizes": [
+      33,
+      33,
+      34
+    ],
+    "layoutMode": 1,
+    "content": "",
+    "updatedOn": 1661367048863,
+    "title": "pg no 35",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "createdOn": 1660159236189,
+    "cssMode": "css",
+    "mainSizes": [
+      50,
+      50
+    ],
+    "htmlMode": "html",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "html": "<!doctype html>\n<html>\n<head>\n  <style>\n    div {\n      background-color:white;\n      width:300px;\n        border:15px solid green;\n      padding:30px;\n      margin:15px;\n}\n  </style>\n  </head>\n  <body>\n    <h2>Demonstrating the CSS Box Model</h2>\n    <p>The CSS box model is a box that wraps around any element of\n      HTML.It consist of the actual content ,margins,borders,padding.</p>\n    <div>This text is the content of the box.we have added a 30px padding, 15px margin and a 15px orange border.</div>\n  </body>\n</html>\n",
+    "js": "",
+    "css": "",
+    "jsMode": "js",
+    "id": "item-hVpKJYphqo"
+  },
+  {
+    "content": "",
+    "createdOn": 1659108855739,
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "updatedOn": 1660157976503,
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "cssMode": "css",
+    "id": "item-kDlX0iqIs9",
+    "layoutMode": 1,
+    "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <style>\n      .s1{\n        background-color:PINK\n      }\n      .s2{\n        background-color:lightgreen\n      }\n      .s3{\n        background-color:yellow\n      }\n      table,th,td,tr,h1{\n        border:3px solid rgb(224,10,10);\n        border-collapse:collapse;\n      }\n      td{\n        padding:10px;\n        text-align:center\n      }\n      table,h1{\n        width:80%;\n        height:50%;\n      }\n    </style>\n  </head>\n  <body>\n    <center>\n    <table>\n      <thead>\n        <tr class=\"s3\">\n          <th colspan=6;><u>STUDENT MARKS SHEET</u></th>\n        </tr>\n        <tr class=\"s1\">\n          <th><h3>Name</h3></th>\n          <th><h3>Maths</h3></th>\n          <th><h3>Science</h3></th>\n          <th><h3>English</h3></th>\n          <th><h3>Computer<br>Science</h3></th>\n          <th><h3>MATHS<br>2</h3></th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"s2\">\n          <td>ABHIJET</td>\n          <td>98</td>\n          <td>56</td>\n          <td>87</td>\n          <td>89</td>\n          <td>45</td>\n        </tr>\n        <tr class=\"s1\">\n          <td>SAPNA</td>\n          <td>49</td>\n          <td>69</td>\n          <td>78</td>\n          <td>56</td>\n          <td>34</td>\n        </tr>\n        <tr class=\"s2\">\n          <td>PARESH</td>\n          <td>98</td>\n          <td>56</td>\n          <td>75</td>\n          <td>84</td>\n          <td>92</td>\n        </tr>\n        <tr class=\"s1\">\n          <td>NIKITA</td>\n          <td>84</td>\n          <td>87</td>\n          <td>85</td>\n          <td>80</td>\n          <td>83</td>\n        </tr>\n      </tbody>\n    </table>\n    </center>\n  </body>\n</html>",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "css": "",
+    "title": "css student PG 29",
+    "js": "",
+    "jsMode": "js",
+    "htmlMode": "html",
+    "mainSizes": [
+      50,
+      50
+    ]
+  },
+  {
+    "cssMode": "css",
+    "mainSizes": [
+      50,
+      50
+    ],
+    "js": "",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "id": "item-kYYc4NYxqu",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<form>\n   <lable for=\"fname\">First Name:</lable><br>\n   <input type=\"text\" id=\"fname\" name=\"fname\" value=\"\"><br>\n   \n  <lable for=\"lname\">last name:</lable><br>\n   <input type=\"text\" id=\"lname\" name=\"lname\" value=\"\"><br><br>\n   \n  <lable for=\"email\">Enter your email:</lable>\n   <input type=\"email\" value=\"\"><br>\n   \n  <lable for=\"birthdate\">Birthday (date):</lable>\n   <input type=\"date\" value=\"\"><br>\n   \n  <lable for=\"color\">Select your favourite color:</lable>\n   <input type=\"color\" value=\"\"><br>\n   \n  <h9> Select your gender:</h9>\n   <lable for=\"gender\" value=\"\"><br>\n   <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\n   <lable for=\"male\">Male</lable><br>\n   <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\n     <lable for=\"female\">Female</lable><br>\n     <input type=\"radio\" id=\"other\" name=\"gender\" value=\"other\">\n     <lable for=\"other\">other<br><br>\n     <input type=\"submit\" value=\"Submit\">\n     <input type=\"reset\">\n       \n\n",
+    "layoutMode": 1,
+    "htmlMode": "html",
+    "createdOn": 1660070783577,
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "jsMode": "js",
+    "content": "",
+    "updatedOn": 1660158127566,
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "title": "CHP 4 PG 33",
+    "css": ""
+  },
+  {
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "js": "",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n  <style> table, tr, td\n  </style>\n  </head>\n    <body>\n      <table>\n        <tr>\n          <th>FIRSTNAME</th>\n          <th>LASTNAME</th>\n          <th>AGE</th>\n        </tr>\n        <tr>\n          <th>HEM</th>\n          <th>DASAI</th>\n          <th>15</th>\n          </tr>\n        <tr>\n          <th>PIYUSH</th>\n           <th>PUROHIT</th>\n          <th>18</th>\n          </tr>\n        <tr>\n           <th>ROHIT</th>\n           <th>SHARMA</th>\n           <th>20</th>",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "layoutMode": 1,
+    "htmlMode": "html",
+    "cssMode": "css",
+    "css": "",
+    "createdOn": 1658946483035,
+    "content": "",
+    "jsMode": "js",
+    "sizes": [
+      100,
+      "33px",
+      "33px"
+    ],
+    "title": "STUDENT NAME WITH AGE EXTRA",
+    "updatedOn": 1660158457685,
+    "mainSizes": [
+      50,
+      50
+    ],
+    "id": "item-mVvRfUhaN0"
+  },
+  {
+    "layoutMode": 1,
+    "css": "",
+    "mainSizes": [
+      50,
+      50
+    ],
+    "id": "item-unWfgQOw1V",
+    "sizes": [
+      33,
+      33,
+      34
+    ],
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "updatedOn": 1660157795695,
+    "js": "",
+    "jsMode": "js",
+    "html": "<!DOCTYPE html>\n<html>\n<head></head>\n  <body>\n    <ol type=\"i\">\n      <h1>LIST SHOWS ORDERED ITEMS</h1>\n      <li>HEAD EAST ON PRICE ST</li>\n      <li>TURN LEFT ON ELIZABETH</li>\n    </ol>\n    \n    <ul type=\"square\">\n      <h1>LIST SHOWS UNORDERED ITEMS</h1>\n      <li>COOKIES</li>\n      <li>MILK</li>\n    </ul>\n  </body>\n</html>",
+    "content": "",
+    "htmlMode": "html",
+    "createdBy": "WzmkJRDZMcQqcXVNQ7GY4cYtcsA2",
+    "createdOn": 1658296130416,
+    "title": "order and unorder PG 18",
+    "cssMode": "css"
+  }
+]
